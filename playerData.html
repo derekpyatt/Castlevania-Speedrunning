@@ -1,0 +1,178 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+    <!-- Required for responsive websites -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castlevania NES Speedrunning</title>
+    <link rel='stylesheet' href='assets/css/styleSheetSpeedrun.css'>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <!-- Color palette -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/faviconFolder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/faviconFolder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/faviconFolder/favicon-16x16.png">
+    <link rel="manifest" href="assets/faviconFolder/site.webmanifest">
+    <link rel="mask-icon" href="assets/faviconFolder/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+
+        window.addEventListener('load', function () {
+
+            document.body.style.background = "URL('assets/img/rainLightning.gif')";
+            //The alt for this background image would be: uniform looping rain gif
+
+            //document.body.style.backgroundRepeat = "no-repeat";
+            //document.body.style.backgroundAttachment = "fixed";
+            //document.body.style.backgroundSize = "100% 100%";
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col-10">
+
+
+
+            <div class="header">
+
+                <img class="imageLogo" alt= "Castlevania Logo" src="assets/img/logoTransparent.png" />
+
+            </div>
+
+            <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="castlevaniaSpeedrunning.html">Castlevania Speedrunning</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="playerData.html">Player Data</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+
+                <li class="floatRight"><a class="active" href="gameSpeedrun.html">Game</a></li>
+
+            </ul>
+            </nav>
+
+            <div class="row">
+
+                <div class="col-1"></div>
+
+                <div id="mainBackground" class="col-10">
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <h1>Who Speedruns Castlevania?</h1>
+
+                            <p class="narrativeText">
+                                One of the cool things about speedrunning is that as long as somebody has access to a game and an internet connection they can try their hand at running a game.
+                                That means that people from literally all over the world can be involved in a game's speedrunning community.
+                                Castlevania is no exception featuring runners from countries all over the world.
+                            </p>
+
+                            <div>
+                                <h1 class="axisBold">Player Desnisty By Country For Top 50</h1>
+                                <div class="overflow" id="worldMap"></div>
+                                <script src="assets/js/worldMap.js"></script>
+                            </div>
+
+                            <p class="narrativeText">
+                                Looking at this visualization we can see that most Castlevania speedrunners are local to the US.
+                                That being said this only shows the location for the top 50 players, and in that alone, there is a huge diversity of countries.
+                                Speedrunning is an amazing community that can bring people that would never meet together under the common goal of beating Castlevania as fast as possible. 
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                   <div class="row">
+
+                        <div class="col-1"></div>
+
+
+                        <div class="col-10">
+
+                            <h1>The Run Count</h1>
+
+                            <p class="narrativeText">
+                                When you are a top player in speedrunning a game you won't be happy stagnating or having your placement taken from you.
+                                That is why the ability to keep improving and submitting new records to retake the throne creates competition between top players.
+                                So watching how many times players improve and submit rankings is important, seeing the effort and work they put in to get to and stay where they are speaks to their drive and persistence.
+                            </p>
+
+                            <div>
+                                <h1 class="axisBold">Run Count For Top Ten Runners</h1>
+                                <div class="overflow" id="officialRuns"></div>
+                                <script src="assets/js/officialRuns.js"></script>
+                            </div>
+
+                            <p class="narrativeText">
+                                This chart shows how many times the top ten ranked players on the <a href="https://www.speedrun.com/cv1">Offical Castlevania Leaderboard</a> submitted a run.
+                                We can see that not all players are on the same level of submitted runs.
+                                Based on this chart we can conclude that the runners with more submissions have probably been around for a longer amount of time and have to keep fighting to hold their records.
+                                As we go down from the first place at the top of the Y-axis, we can see that overall the number of submitted runs goes down further supporting the conclusion.
+                                Keeping your spot at the top is always difficult, as everyone does everything in their power to surpass you.
+                            </p>
+                            
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <button class="floatLeft" onclick="location.href='catagories.html'">Back</button>
+                            <button class="floatRight" onclick="location.href='conclusion.html'">Next</button>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+                
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+</body>
+
+</html>

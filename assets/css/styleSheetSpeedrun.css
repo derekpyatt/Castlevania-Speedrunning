@@ -1,0 +1,320 @@
+﻿/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    box-sizing: border-box;
+    font-family: 'Fondamento';
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    padding: 15px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imageLogo{
+    width: 50%;
+    height: auto;
+}
+
+.techGIF{
+    width: 70%;
+    height: auto;
+}
+
+/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
+.overflow {
+    overflow-x: auto;
+}
+
+body {
+    text-align: center;
+}
+
+.header {
+    align-content: center;
+    padding: 15px;
+    background-image: url(../img/castleEntrance.png);
+    background-repeat: no-repeat;
+    background-size: 106% 100%;
+    outline: 4.5px solid #400a17;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.content {
+    align-content: center;
+    padding: 15px;
+    background-image: url(../img/brickBackground.jpg);
+}
+
+#mainBackground {
+    align-content: center;
+    padding: 15px;
+    background-image: url(../img/brickBackground.jpg);
+}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8d3011;
+    outline: 4.5px solid #400a17;
+}
+/*
+ul b{
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+    text-indent: 50px;
+    font-weight: 400;
+    text-align: left;
+    color: antiquewhite;
+    font-size: 22px;
+}*/
+
+nav li {
+    float: left;
+}
+
+nav li a {
+  display: block;
+  color: antiquewhite;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #9a4819;
+  color: black;
+}
+
+.frameContainer {
+    position: relative;
+    width: 100%;
+
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+h1 {
+    color: antiquewhite;
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+}
+
+h2 {
+    color: antiquewhite;
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+}
+
+.tooltip {
+    background-color: #646464;
+    border-radius: 5px;
+    height: 46px;
+    padding: 2px;
+    opacity: 0;
+    font: 16px;
+    color: antiquewhite;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tick line {
+    opacity: .25;
+    stroke: #45070e;
+}
+
+.axisBold {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+#axisBold {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.fontSize {
+    font-weight: 500;
+    font-size: 12px;
+    color: antiquewhite;
+}
+
+#fontSize {
+    font-weight: 500;
+    font-size: 12px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+  .axisWhite line{
+    stroke: antiquewhite;
+  }
+  
+  .axisWhite path{
+    stroke: antiquewhite;
+  }
+  
+  .axisWhite text{
+    fill: antiquewhite;
+  }  
+
+  button {
+    background-color: #45070e;
+    font-weight: bold;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    font-size: 16px;
+  }
+
+  #tooltipDetials {
+    background-color: #45070e;
+    border-radius: 5px;
+    height: 50px;
+    padding: 4px;
+    opacity: 0;
+    font: 16px;
+    color: antiquewhite;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+}
+
+  .node:hover{
+    stroke-width: 7px !important;
+    opacity: 1 !important;
+  }
+
+  .floatLeft{
+      float: left;
+
+  }
+
+  .floatRight{
+    float: right;
+
+}
+
+.narrativeText {
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+    text-indent: 50px;
+    font-weight: 400;
+    text-align: left;
+    color: antiquewhite;
+    font-size: 22px;
+}
+
+a{
+    color: antiquewhite;
+}
+
+#floatCenter{
+    text-align: center;
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+    font-weight: 400;
+    color: antiquewhite;
+    font-size: 22px;
+}
+
+.middleBullets {
+    text-align: center;
+    list-style-position: inside;
+    text-shadow: 0 0 3px #000000, 0 0 8px #4b4b4b;
+    font-weight: 400;
+    color: antiquewhite;
+    font-size: 22px;
+    line-height:160%;
+}

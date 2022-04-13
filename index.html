@@ -1,0 +1,168 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+    <!-- Required for responsive websites -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castlevania NES Speedrunning</title>
+    <link rel='stylesheet' href='assets/css/styleSheetSpeedrun.css'>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/faviconFolder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/faviconFolder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/faviconFolder/favicon-16x16.png">
+    <link rel="manifest" href="assets/faviconFolder/site.webmanifest">
+    <link rel="mask-icon" href="assets/faviconFolder/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+
+        window.addEventListener('load', function () {
+
+            document.body.style.background = "URL('assets/img/rainLightning.gif')";
+            //The alt for this background image would be: uniform looping rain gif
+
+            //document.body.style.backgroundRepeat = "no-repeat";
+            //document.body.style.backgroundAttachment = "fixed";
+            //document.body.style.backgroundSize = "100% 100%";
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col-10">
+
+
+
+            <div class="header">
+
+                <img class="imageLogo" alt= "Castlevania Logo" src="assets/img/logoTransparent.png" />
+
+            </div>
+            
+            <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="castlevaniaSpeedrunning.html">Castlevania Speedrunning</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="playerData.html">Player Data</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+
+                <li class="floatRight"><a class="active" href="gameSpeedrun.html">Game</a></li>
+
+            </ul>
+            </nav>
+
+            <div class="row">
+
+                <div class="col-1"></div>
+
+                <div id="mainBackground" class="col-10">
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <h1>What is Speedrunning?</h1>
+
+                            <p class="narrativeText">
+                                For those unaware, speedrunning is the term for completing a video game as fast as possible.
+                                This type of playing games isn't a new idea either, it's actually been around for over 20 years and is climbing in popularity.
+                                In the last ten years alone the interest in speedrunning has grown exponentially.
+                                If you were to search up any video game out there chances are the game has a community dedicated to beating it as fast as they possibly can.
+                                At any given time it is almost a guarantee that people are out there live-streaming themselves speedrunning for thousands of viewers in an attempt to beat some kind of record. 
+                            </p>
+
+                            <p class="narrativeText">
+                                Now the question is: why should you care?
+                                Well, speedrunning is practically a sport with the way runners are able to absolutely dissect a game and figure out everything that happens frame by frame.
+                                It is a truly mesmerizing experience to watch an absolute expert on a game demonstrate their abilities in a competitive environment where they strive for the world's fastest time.
+                                Also, the community that surrounds speedrunning is utterly amazing with events like the annual <a href="https://gamesdonequick.com/">Games Done Quick</a> marathon that hosts countless runners and has brought in millions of dollars for charity.
+                                Speedrunning is a feat of excellence and really demonstrates what people are capable of when they work towards a goal, even if that goal is beating a game in a fraction of the time it would take the average player.
+                            </p>
+
+                            <iframe title="Google Search trend for &quot;speedrunning&quot;" aria-label="Interactive line chart" id="datawrapper-chart-XD4M1" 
+                            src="https://datawrapper.dwcdn.net/XD4M1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="470"></iframe>
+                            <script type="text/javascript">
+                            !function(){
+                            "use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"])
+                            {var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++)
+                            {if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                            </script>
+
+                            <p class="narrativeText">
+                                The above graph features data gathered from <a href="https://trends.google.com">Google Trends</a> and shows the worldwide interest in speedrunning from roughly the last 10 years.
+                                We can see that since 2012 public interest in speedrunning is only growing and it reached its peak at the start of this year after leaping up from the beginning of 2020.
+                                It's easy to see that speedrunning is only gaining momentum as time moves forward.
+                                The larger the audience that this activity reaches the more people try their hand at it further pushing speedrunning into the mainstream.
+                            </p>
+
+                            <br>
+
+                            <h1>What is Castlevania?</h1>
+
+                            <img class="imageLogo" alt= "Castlevania NA cover art" src="assets/img/coverArt.jpg" />
+
+                            <p class="narrativeText">
+                                Castlevania is a video game series from the Japanese company Konami.
+                                The series has had a variety of games featuring the Belmonts, a fierce family dedicated to the eradication of night creatures, and their sworn enemy Dracula.
+                                Along with some other characters the games usually center around a Belmont and their infiltration of Dracula's castle.
+                                The games are popular worldwide and beloved by many, however, the title I would like to focus on is the first in the franchise made for the NES aptly titled: Castlevania.
+                                This game has been massively popular and is responsible for launching the whole series.
+                                On top of that, it has been speedran by countless individuals trying to get the fastest time since 2004.
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <button class="floatRight"><b onclick="location.href='castlevaniaSpeedrunning.html'">Next</b></button>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+</body>
+
+</html>

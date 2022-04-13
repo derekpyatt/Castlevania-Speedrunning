@@ -1,0 +1,201 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+    <!-- Required for responsive websites -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castlevania NES Speedrunning</title>
+    <link rel='stylesheet' href='assets/css/styleSheetSpeedrun.css'>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/faviconFolder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/faviconFolder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/faviconFolder/favicon-16x16.png">
+    <link rel="manifest" href="assets/faviconFolder/site.webmanifest">
+    <link rel="mask-icon" href="assets/faviconFolder/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+
+        window.addEventListener('load', function () {
+
+            document.body.style.background = "URL('assets/img/rainLightning.gif')";
+            //The alt for this background image would be: uniform looping rain gif
+
+            //document.body.style.backgroundRepeat = "no-repeat";
+            //document.body.style.backgroundAttachment = "fixed";
+            //document.body.style.backgroundSize = "100% 100%";
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col-10">
+
+
+
+            <div class="header">
+
+                <img class="imageLogo" alt= "Castlevania Logo" src="assets/img/logoTransparent.png" />
+
+            </div>
+
+            <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="castlevaniaSpeedrunning.html">Castlevania Speedrunning</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="playerData.html">Player Data</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+
+                <li class="floatRight"><a class="active" href="gameSpeedrun.html">Game</a></li>
+
+            </ul>
+            </nav>
+
+            <div class="row">
+
+                <div class="col-1"></div>
+
+                <div id="mainBackground" class="col-10">
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <h1>Different Types of Speedruns</h1>
+
+                            <p class="narrativeText">
+                                As strange as it sounds there are different ways to speedrun a game.
+                                These different runs vary from game to game but all usually feature the same main category called: Any %.
+                                This means that the runner must beat the game as fast as possible and the completion percent doesn't matter.
+                                On the other hand, there is another category common among different games called 100% where the runner tries to beat the game with 100% completion.
+                            </p>
+
+                            <p class="narrativeText">
+                                So how about Castlevania? The most popular category is Any %, however, there is no 100% category for this game.
+                                Instead, Castlevania has some unique categories of its own that aren't as popular as Any % but still have followings of thier own.
+                                These categories consist of: 
+                            </p>
+
+                            <ul class="middleBullets">
+
+                            <li>
+                                Whip Only - No subweapons can be used (but can be picked up).
+                            </li>
+
+                            <li>
+                                Low % - Whip upgrades are forbidden. No subweapons can be used (but can be picked up). Potions, pork chops, and rosaries are also forbidden.
+                            </li>
+
+                            <li>
+                                Easy Mode - Easy mode can be found on the Japanese version of Castlevania. Beat the game as fast as possible by any means necessary.
+                            </li>
+
+                            <li>
+                                2 Loop - Beat the 1st and 2nd loop as fast as possible by any means necessary.
+                            </li>
+
+                            <li>
+                                Damageless - Beat the game with no deaths and taking no damage.
+                            </li>
+                            
+                            </ul>
+                            
+                            <div class="overflow">
+                                <h1 class="axisBold">Total Submitted Runs Per Category</h1>
+                                <!-- Add 2 buttons -->
+                                <button onclick="update(noAny)">Exclude Any %</button>
+                                <button onclick="update(yesAny)">All Categories</button>
+
+                                <div class="overflow" id="categoryBar"></div>
+                                <script src="assets/js/categoryBar.js"></script>
+                            </div>
+
+                            <p class="narrativeText">
+                                This graph can show us a few things about speedrunning Castlevania.
+                                The first and most obvious is that Any % is largely the most popular category having far more submitted runs than any of the other categories combined.
+                                Aside from that, we can conclude that the stricter the rules become the fewer people even attempt to run the game in that category.
+                                The most prevalent example of this is the damageless category featuring only two official runs.
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                   <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <div class="overflow">
+                                <h1 class="axisBold">Fastest Runs Per Category</h1>
+                                <div class="overflow" id="categoryTime"></div>
+                                <script src="assets/js/categoryTime.js"></script>
+                            </div>
+
+                            <p class="narrativeText">
+                                One thing that is interesting about this chart, which features the fastest time from each category, is that difficulty doesn't always correlate with the longest time.
+                                We can see that clearly the most popular and most ran category of Any % features the fastest time but following that we have Easy Mode then Damageless.
+                                Damageless of course having only two official runs and considered to be an incredibly difficult feat.
+                                That being said it is still faster than three other categories on the chart.
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <button class="floatLeft" onclick="location.href='castlevaniaSpeedrunning.html'">Back</button>
+                            <button class="floatRight" onclick="location.href='PlayerData.html'">Next</button>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+</body>
+
+</html>

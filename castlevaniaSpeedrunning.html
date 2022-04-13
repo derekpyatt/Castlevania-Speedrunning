@@ -1,0 +1,200 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+    <!-- Required for responsive websites -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castlevania NES Speedrunning</title>
+    <link rel='stylesheet' href='assets/css/styleSheetSpeedrun.css'>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/faviconFolder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/faviconFolder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/faviconFolder/favicon-16x16.png">
+    <link rel="manifest" href="assets/faviconFolder/site.webmanifest">
+    <link rel="mask-icon" href="assets/faviconFolder/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+
+        window.addEventListener('load', function () {
+
+            document.body.style.background = "URL('assets/img/rainLightning.gif')";
+            //The alt for this background image would be: uniform looping rain gif
+
+            //document.body.style.backgroundRepeat = "no-repeat";
+            //document.body.style.backgroundAttachment = "fixed";
+            //document.body.style.backgroundSize = "100% 100%";
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col-10">
+
+
+
+            <div class="header">
+
+                <img class="imageLogo" alt= "Castlevania Logo" src="assets/img/logoTransparent.png" />
+
+            </div>
+
+            <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="castlevaniaSpeedrunning.html">Castlevania Speedrunning</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="playerData.html">Player Data</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+
+                <li class="floatRight"><a class="active" href="gameSpeedrun.html">Game</a></li>
+
+            </ul>
+            </nav>
+
+            <div class="row">
+
+                <div class="col-1"></div>
+
+                <div id="mainBackground" class="col-10">
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <h1>Speedrunning Castlevania</h1>
+
+                            <p class="narrativeText">
+                                Now, Castlevania is regarded as one of the hardest titles on the NES alone but when you throw speedrunning into the mix the difficulty is elevated to a whole new level.
+                                The average playthrough of this game is supposed to take the player hours to beat especially with how hard the game is, but, in 2004 a player by the name of Tom Votva (known for speedrunning all sorts of rare and challenging NES games) posted the first Castlevania speedrun that boasted the time of 14 minutes and 25 seconds.
+                                You must be wondering, how is that even possible?
+                                Well, Tom was able to break the game down level by level and used some intuitive tricks to get to the end in record time.
+                            </p>
+
+                            <p class="narrativeText">
+                                Since Tom's original speedrun the game has amassed a huge audience that was able to collectively reduce the time by minutes.
+                                Since that first run of the game, countless tricks and maneuvers have been discovered by analyzing the technical aspects of the game and manipulating them for the player's benefit.
+                                These discoveries are shared amongst the community to give runners new ways to improve their time.
+                                Some of these techniques are: boosting your character by taking damage from an enemy, using technical glitches, selective use of power-ups, critical hits of damage, level routing and planning, and manipulating the frame the player is on.
+                            </p>
+
+                            <h2>Damage Boost in Action</h2>
+                            <img class= "techGIF" alt= "Damage Boost" src= "assets/img/damageBoost.gif"/>
+                            
+                            <div>
+                                <div class="overflow" id="dataviz_axisZoom"><h1 class="axisBold">Player Ranking vs Speedrun Time</h1></div>
+                                <script src="assets/js/zoomWithTooltip.js"></script>
+                            </div>
+
+                            <p class="narrativeText">
+                                Above is a graph that features the top 80 players ranked on the <a href="https://www.speedrun.com/cv1">Offical Castlevania Leaderboard</a> as of the beginning of this month.
+                                You can zoom in and pan around with your mouse on the graph to get a better look at specific areas as well as hover over each dot to see the runner's name, ranking, and time.
+                                This graph helps to demonstrate how intense speedrunning can be by looking at how neck and neck each time is.
+                                Runners are only seconds off from each other sometimes tieing at the same spot.
+                                Speedrunning is a cutthroat challenge and the tiniest mistake made in a run can ruin all hope at getting a better time.
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <h1>How do They Play the Game?</h1>
+
+                            <p class="narrativeText">
+                                There are a lot of options when it comes to playing the game itself.
+                                The speedrunning community has a list of allowed emulators for each game and console, however, a lot of people may opt for playing an official release.
+                                A vast majority of players hold the opinion that if you aren't playing on the original console with an original copy of the game then it shouldn't count, however, getting your hands on an NES and copy of the game is extremely challenging therefore certain emulators can be allowed.
+                                The following data comes from the <a href="https://www.speedrun.com/cv1">Offical Castlevania Leaderboard</a> which features what platform the game was run on for each record.
+                            </p>
+
+                            <div class="row">
+        
+                                <div class="col-6">
+                                    
+                                    <div id="axisBold">
+                                        <div class="overflow" id="donutOne"></div>
+                                        <script src="assets/js/donutOne.js"></script>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div id="axisBold">
+                                        <div class="overflow" id="donutTwo"></div>
+                                        <script src="assets/js/donutTwo.js"></script>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+
+                            <p class="narrativeText">
+                                Based on this data we can see that almost collectively everybody plays on the NES.
+                                However, the second chart shows us that when it comes to emulation it is almost a perfect split with only a fraction more on the side of the original console.
+                                This means that at the end of the day all player's runs will be official and not called into question because of the platform they used.
+                            </p>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-1"></div>
+
+                        <div class="col-10">
+
+                            <button class="floatLeft" onclick="location.href='homepageSpeedrun.html'">Back</button>
+                            <button class="floatRight" onclick="location.href='catagories.html'">Next</button>
+
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+</body>
+
+</html>
